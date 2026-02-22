@@ -24,7 +24,7 @@ export default function Registration() {
   const { isAuth, admin } = useSelector((state: RootState) => state.admin);
   const router = useRouter();
 
-  useEffect(() => {}, [isAuth, admin]);
+  useEffect(() => { }, [isAuth, admin]);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -55,14 +55,14 @@ export default function Registration() {
         error.newPassword = "Doesn't match password to confirm password !";
       return setError({ ...error });
     } else {
-      let payload : any = {
+      let payload: any = {
         email,
         newPassword,
         password,
-        //code,
+        code: "jago-malda",
       };
 
-         dispatch(signUpAdmin(payload));
+      dispatch(signUpAdmin(payload));
     }
   };
 
@@ -151,8 +151,8 @@ export default function Registration() {
                       }
                     }}
                   />
-                  
-                  
+
+
 
                   <div
                     className="d-flex justify-content-center w-100"
