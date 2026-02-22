@@ -15,3 +15,18 @@ DB/settings.json
 .DS_Store
 Thumbs.db
 
+# Flutter
+flutter-ui/.dart_tool/
+flutter-ui/.idea/
+**/build/
+flutter-ui/.flutter-plugins
+flutter-ui/.flutter-plugins-dependencies
+flutter-ui/.packages
+flutter-ui/flutter_verbose.log
+flutter-ui/ios/Pods/
+flutter-ui/ios/.symlinks/
+flutter-ui/ios/Flutter/Generated.xcconfig
+flutter-ui/ios/Flutter/flutter_export_environment.sh
+flutter-ui/android/app/publish/
+flutter-ui/android/key.properties
+
