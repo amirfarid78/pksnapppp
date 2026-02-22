@@ -63,6 +63,7 @@ const LiveUser = require(_0xc7bf5c(0x164) + "r");
 //create admin
 exports.store = async (req, res) => {
   try {
+    console.log("Signup Request Body:", req.body);
     if (!req.body.email || !req.body.password) {
       if (req.file) deleteFile(req.file);
       return res.status(200).json({ status: false, message: "Oops ! Invalid details." });
@@ -102,6 +103,7 @@ exports.store = async (req, res) => {
 //admin login
 exports.login = async (req, res) => {
   try {
+    console.log("Login Request Body:", req.body);
     if (!req.body.email || !req.body.password) {
       return res.status(200).json({ status: false, message: "Oops ! Invalid details." });
     }

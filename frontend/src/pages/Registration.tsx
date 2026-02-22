@@ -62,6 +62,7 @@ export default function Registration() {
         code: "jago-malda",
       };
 
+      console.log("Dispatching signup payload:", payload);
       dispatch(signUpAdmin(payload));
     }
   };
